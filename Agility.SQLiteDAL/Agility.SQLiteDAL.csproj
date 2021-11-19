@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AgillityDB.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="AgillityDB.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentNHibernate" Version="3.1.0" />
+    <PackageReference Include="MySqlConnector" Version="1.2.1" />
+    <PackageReference Include="NHibernate" Version="5.3.5" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.113.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Agility.BaseLib\Agility.BaseLib.csproj" />
+  </ItemGroup>
+
+</Project>

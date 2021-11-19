@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Agility.DomainModel.ProductBacklog">
+    <Position X="15.25" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACCBCAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProductBacklog.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Project" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="BacklogRequirements" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Agility.DomainModel.Project">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIIAAAAAAgIAIAAAAIAAQgBAAAAAAAAABEAEAAgAA=</HashCode>
+      <FileName>Project.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Backlog" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Members" />
+      <Property Name="Sprints" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Agility.DomainModel.Requirement">
+    <Position X="18.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ASRIAAgAAIAgAEQEAAEAAAAAAAAAAAAQAQAAAAAAAAA=</HashCode>
+      <FileName>Requirement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Backlog" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="RequirementTasks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Agility.DomainModel.RequirementPriority">
+    <Position X="23.25" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Agility.DomainModel.RequirementPriority.PriorityEnum">
+        <TypeIdentifier>
+          <NewMemberFileName>RequirementPriority.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>RequirementPriority.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Agility.DomainModel.RequirementType">
+    <Position X="21.25" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Agility.DomainModel.RequirementType.TypeEnum">
+        <TypeIdentifier>
+          <NewMemberFileName>RequirementType.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>RequirementType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Agility.DomainModel.Sprint">
+    <Position X="15.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAoAAAACQACAQgAAAAAAAAAIAAAEQAAAA=</HashCode>
+      <FileName>Sprint.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Project" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="SprintTasks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Agility.DomainModel.Task">
+    <Position X="18.75" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAEgAAgAAAEAQAAAEAAAAoAAgAAAICAAAAAAAA=</HashCode>
+      <FileName>Task.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MemberWorking" />
+      <Property Name="Requirement" />
+      <Property Name="Sprint" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Agility.DomainModel.TaskStatus">
+    <Position X="20.75" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Agility.DomainModel.TaskStatus.StatusEnum">
+        <TypeIdentifier>
+          <NewMemberFileName>TaskStatus.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TaskStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Agility.DomainModel.User">
+    <Position X="9.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAAAACAAAIAAgAAAAAwABABAAIAKAAAAAAQEAAE=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="UserProjects" />
+      <Property Name="UserTasks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

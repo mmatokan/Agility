@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Agility.BaseLib\Agility.BaseLib.csproj" />
+    <ProjectReference Include="..\Agility.SQLiteDAL\Agility.SQLiteDAL.csproj" />
+    <ProjectReference Include="..\AgilityLibrary\Agility.DomainModel.csproj" />
+  </ItemGroup>
+
+</Project>

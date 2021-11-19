@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3908BF14-7404-40C6-B6C8-065395F7054B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Agility.PresentationLayer</RootNamespace>
+    <AssemblyName>Agility.PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.2.0.0\lib\net35-Client\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="ListViewPrinter, Version=2.7.1.31255, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ObjectListView.2.7.1.5\lib\ListViewPrinter.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectListView, Version=2.7.1.31255, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <HintPath>..\packages\ObjectListView.2.7.1.5\lib\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="SparkleLibrary, Version=2.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ObjectListView.2.7.1.5\lib\SparkleLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.3.0.0\lib\net35-Client\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddRequirement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddRequirement.Designer.cs">
+      <DependentUpon>frmAddRequirement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBacklog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBacklog.Designer.cs">
+      <DependentUpon>frmBacklog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateProject.Designer.cs">
+      <DependentUpon>frmCreateProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateSprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateSprint.Designer.cs">
+      <DependentUpon>frmCreateSprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProjectDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProjectDashboard.Designer.cs">
+      <DependentUpon>frmProjectDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProjectView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProjectView.Designer.cs">
+      <DependentUpon>frmProjectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogIn.Designer.cs">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHomeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHomeView.Designer.cs">
+      <DependentUpon>frmHomeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignUp.Designer.cs">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSprint.Designer.cs">
+      <DependentUpon>frmSprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProjectListItem.Designer.cs">
+      <DependentUpon>ProjectListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequirementListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RequirementListItem.Designer.cs">
+      <DependentUpon>RequirementListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaskListItem.Designer.cs">
+      <DependentUpon>TaskListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddRequirement.resx">
+      <DependentUpon>frmAddRequirement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBacklog.resx">
+      <DependentUpon>frmBacklog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateProject.resx">
+      <DependentUpon>frmCreateProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateSprint.resx">
+      <DependentUpon>frmCreateSprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogIn.resx">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProjectDashboard.resx">
+      <DependentUpon>frmProjectDashboard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProjectView.resx">
+      <DependentUpon>frmProjectView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHomeView.resx">
+      <DependentUpon>frmHomeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignUp.resx">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSprint.resx">
+      <DependentUpon>frmSprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectListItem.resx">
+      <DependentUpon>ProjectListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RequirementListItem.resx">
+      <DependentUpon>RequirementListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskListItem.resx">
+      <DependentUpon>TaskListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agility.BaseLib\Agility.BaseLib.csproj">
+      <Project>{e8928752-dfbb-4813-a9a0-7287289135fb}</Project>
+      <Name>Agility.BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AgilityLibrary\Agility.DomainModel.csproj">
+      <Project>{A1F76CBA-28CF-48CD-82E6-9F87DAC26884}</Project>
+      <Name>Agility.DomainModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon awesome-window-close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon awesome-window-minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon awesome-window-restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon simple-sprint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_purple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon feather-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon material-exit-to-app.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon open-trash.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
